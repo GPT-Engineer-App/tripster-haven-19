@@ -21,12 +21,12 @@ const BookingPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <img src="/placeholder.svg" alt="Property" className="w-full h-[400px] object-cover rounded-lg mb-4" />
-          <h1 className="text-3xl font-bold mb-4">Luxury Beachfront Villa</h1>
-          <p className="text-gray-600 mb-4">
+          <h1 className="text-3xl font-bold mb-4 text-gray-900">Luxury Beachfront Villa</h1>
+          <p className="text-gray-700 mb-4">
             Experience the ultimate beachfront getaway in this stunning villa. Enjoy breathtaking ocean views, private beach access, and luxurious amenities.
           </p>
-          <h2 className="text-xl font-semibold mb-2">Amenities</h2>
-          <ul className="list-disc list-inside mb-4">
+          <h2 className="text-xl font-semibold mb-2 text-gray-900">Amenities</h2>
+          <ul className="list-disc list-inside mb-4 text-gray-700">
             <li>Private pool</li>
             <li>Fully equipped kitchen</li>
             <li>Wi-Fi</li>
