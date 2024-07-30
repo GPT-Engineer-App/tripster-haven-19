@@ -1,6 +1,8 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
-const PropertyCard = ({ title, price, image }) => {
+const PropertyCard = ({ id, title, price, image }) => {
   return (
     <Card className="overflow-hidden">
       <img src={image} alt={title} className="w-full h-48 object-cover" />
@@ -9,9 +11,9 @@ const PropertyCard = ({ title, price, image }) => {
       </CardContent>
       <CardFooter className="p-4 pt-0 flex justify-between items-center">
         <span className="text-lg font-bold text-gray-900">${price} / night</span>
-        <button className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors">
-          View
-        </button>
+        <Button asChild>
+          <Link to={`/listing/${id}`}>View</Link>
+        </Button>
       </CardFooter>
     </Card>
   );
