@@ -5,6 +5,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import PropertyCard from "./PropertyCard";
 
@@ -25,10 +26,10 @@ const Index = () => {
           <div className="text-2xl font-bold text-red-500">Airbnb Clone</div>
           <nav>
             <ul className="flex space-x-4">
-              <li><a href="/" className="text-gray-800 hover:text-gray-900">Home</a></li>
-              <li><a href="/explore" className="text-gray-800 hover:text-gray-900">Explore</a></li>
-              <li><a href="/my-trips" className="text-gray-800 hover:text-gray-900">My Trips</a></li>
-              <li><a href="/login" className="text-gray-800 hover:text-gray-900">Login/Signup</a></li>
+              <li><Link to="/" className="text-gray-800 hover:text-gray-900">Home</Link></li>
+              <li><Link to="/booking" className="text-gray-800 hover:text-gray-900">Explore</Link></li>
+              <li><Link to="/my-trips" className="text-gray-800 hover:text-gray-900">My Trips</Link></li>
+              <li><Link to="/signin" className="text-gray-800 hover:text-gray-900">Login/Signup</Link></li>
             </ul>
           </nav>
         </div>
